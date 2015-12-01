@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-confirmation-dialog",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Pham <nguyen.pc@live.com>"
+  ],
+  "description": "A custom confirmation dialog for angularjs",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0-beta.2",
+    "angular-material": "master"
+  }
+}

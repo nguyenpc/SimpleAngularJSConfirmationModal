@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="customDialog">
+<head>
+  <title>Custom angularJS confirmation dialog Services</title>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/mainController.js"></script>
+
+  <script src="app/services/dialogService.js"></script>
+  <script src="app/directives/dialogDirective.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+
+</head>
+<body>
+  <div ng-controller="mainController">
+    <md-button ng-click="showDialog()" class="md-raised">Show Dialog</md-button>
+
+  </div>
+
+</body>
+</html>
