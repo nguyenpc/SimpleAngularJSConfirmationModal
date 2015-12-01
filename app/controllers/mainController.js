@@ -1,7 +1,7 @@
 app.controller('mainController', function($scope, dialogService) {
 
   $scope.showDialog = function (){
-    dialogService.showConfirm(function (){
+    dialogService.showConfirm('Confirm', "Are you really want to delete this abc?", function (){
       console.log('confirmed');
       dialogService.hideDialog();
 

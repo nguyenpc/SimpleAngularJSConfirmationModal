@@ -3,10 +3,14 @@ app.factory('dialogService', function($rootScope,$compile) {
     showConfirm: showConfirm,
     hideDialog: hideDialog
   };
-  function showConfirm(onConfirm, onCancel){
+  function showConfirm(title, content, onConfirm, onCancel){
     var scope = $rootScope.$new();
-    scope.confirm = onConfirm;
-    scope.cancel = onCancel;
+    scope.vm = {
+      confirm: onConfirm,
+      cancel: onCancel,
+      title: title,
+      content: content
+    }
     var html = $compile('<confirm-dialog></confirm-dialog>')(scope);
     angular.element(document.querySelector('body')).append(html);
   }
